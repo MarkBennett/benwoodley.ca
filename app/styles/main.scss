@@ -49,7 +49,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -69,23 +69,16 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
+    html, body {
+        background: url(../images/ben-bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
